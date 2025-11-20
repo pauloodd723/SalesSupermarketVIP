@@ -90,3 +90,6 @@ Enviar peticiones POST con los datos del cliente/producto para recibir prediccio
 
 
     Los modelos se entrenan con un subsample de 13k registros para acelerar el entrenamiento sin perder representatividad.
+
+## Enlace Colab
+https://colab.research.google.com/drive/1ZIP-udCF2yvgSkrtQefxjKo2I7sqJrF5?usp=sharing
