@@ -56,19 +56,6 @@ Se trabajaron cuatro datasets (Annex1 a Annex4) con información de productos, v
 
     API construida en Flask para predicción en tiempo real.
 
-MineriaProyectoFinal/
-│
-├─ api.py                     # API Flask para predicciones
-├─ MineriaProyectoFinal_clean.csv  # Dataset limpio y unificado
-├─ clf_vip_model.pkl           # Modelo final VIP (RandomForest/XGBoost)
-├─ svm_vip_model.pkl           # Modelo secundario SVM
-├─ kmeans_model.pkl            # Modelo K-Means
-├─ scaler.pkl                  # Escalador de features
-├─ le_category.pkl             # LabelEncoder categorías
-├─ le_discount.pkl             # LabelEncoder descuentos
-├─ le_sale.pkl                 # LabelEncoder tipo de venta
-├─ README.md                   # Este archivo
-└─ notebook_colab.ipynb        # Notebook Colab con todo el flujo
 
 ## ⚙️ Requisitos e Instalación
 
@@ -100,5 +87,6 @@ Enviar peticiones POST con los datos del cliente/producto para recibir prediccio
 ## 📌 Notas importantes
 
     El dataset final está limpio y listo para análisis o despliegue.
+
 
     Los modelos se entrenan con un subsample de 13k registros para acelerar el entrenamiento sin perder representatividad.
