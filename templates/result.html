@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado Clasificación VIP</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+        h1 { color: #333; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); max-width: 600px; }
+        .section { margin-bottom: 20px; }
+        .label { font-weight: bold; }
+        a { text-decoration: none; color: #4CAF50; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Resultado de la Predicción</h1>
+    <div class="card">
+        <div class="section">
+            <div class="label">Cliente VIP (principal):</div>
+            <div>{{ vip_msg }}</div>
+            <div>Probabilidades: {{ vip_prob }}</div>
+        </div>
+
+        <div class="section">
+            <div class="label">SVM (secundario):</div>
+            <div>Probabilidades: {{ svm_prob }}</div>
+        </div>
+
+        <div class="section">
+            <div class="label">Cluster asignado (K-Means):</div>
+            <div>{{ cluster }}</div>
+        </div>
+
+        <a href="/premium_classifier">← Volver al formulario</a>
+    </div>
+</body>
+</html>
